@@ -7,7 +7,9 @@ import {
     ListItem,
     ListItemText,
 } from '@material-ui/core';
-import { withRouter, Link } from 'react-router-dom';
+import Routes from '../Routes/routes';
+
+import { withRouter, Link, Route, Switch } from 'react-router-dom';
 
 const Estudo = (props) => {
     const styles = {
@@ -34,7 +36,12 @@ const Estudo = (props) => {
                                 <List component="ul">
                                     {disciplinas.map((disciplina) => {
                                         return (
-                                            <Link to={`/${disciplina.id}`}>
+                                            <Link
+                                                to={`/${disciplina.id}`}
+                                                href={`/${disciplina.id}`}
+                                                style={{
+                                                    textDecoration: 'none',
+                                                }}>
                                                 <ListItem
                                                     key={disciplina.id}
                                                     button>
@@ -54,7 +61,7 @@ const Estudo = (props) => {
             </Grid>
             <Grid item xs={12} sm={8}>
                 <Paper style={styles.Paper}>
-                    <Typography variant="display1">Bem vindo.</Typography>
+                    <Routes />
                 </Paper>
             </Grid>
         </Grid>
