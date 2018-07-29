@@ -5,6 +5,7 @@ import Fundamentos from './fundamentos';
 import Ingles from './ingles';
 import Logica from './logica';
 import Sociologia from './sociologia';
+import DisciplineScreen from './disciplineScreen';
 
 export {
     Algoritmos,
@@ -14,4 +15,5 @@ export {
     Ingles,
     Logica,
     Sociologia,
+    DisciplineScreen,
 };
