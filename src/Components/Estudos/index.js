@@ -9,7 +9,7 @@ import {
 } from '@material-ui/core';
 import Routes from '../Routes/routes';
 
-import { withRouter, Link, Route, Switch } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 
 const Estudo = (props) => {
     const styles = {
@@ -39,6 +39,7 @@ const Estudo = (props) => {
                                             <Link
                                                 to={`/${disciplina.id}`}
                                                 href={`/${disciplina.id}`}
+                                                key={disciplina.id}
                                                 style={{
                                                     textDecoration: 'none',
                                                 }}>
