@@ -1,8 +1,8 @@
 import React, { Fragment, Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { Header, Footer } from './Layout';
 import Estudo from './Estudos';
 import { disciplinas } from '../Store/disciplinas';
-import { BrowserRouter } from 'react-router-dom';
 
 export default class App extends Component {
     state = { disciplinas, area: '' };
